@@ -1,15 +1,15 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
   mode: 'production',
-  entry: './src/index.js',
+  entry: './src/ex-05.js',
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'bundle.js',
   },
   performance: {
     maxEntrypointSize: 1024000,
-    maxAssetSize: 1024000
+    maxAssetSize: 1024000,
   },
   devServer: {
     publicPath: '/public/',
@@ -17,4 +17,4 @@ module.exports = {
     port: 9000,
     hot: true,
   },
-}
+};
