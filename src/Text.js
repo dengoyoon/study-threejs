@@ -39,16 +39,16 @@ if (WEBGL.isWebGLAvailable()) {
 
   const loader = new THREE.FontLoader();
   loader.load('../static/font/NanumMyeongjo_Bold.json', (font) => {
-    const geometry = new THREE.TextGeometry('윤두현 짱', {
+    const geometry = new THREE.TextGeometry('3', {
       font: font,
-      size: 0.3,
-      height: 0.2,
-      curveSegments: 12,
+      size: 0.6,
+      height: 2,
+      curveSegments: 1,
       bevelEnabled: true,
       bevelThickness: 0.03,
-      bevelSize: 0.03,
-      bevelOffset: 0.005,
-      bevelSegments: 24,
+      bevelSize: 0.06,
+      bevelOffset: 0.003,
+      bevelSegments: 1,
     }).center();
 
     const material = new THREE.MeshStandardMaterial({
