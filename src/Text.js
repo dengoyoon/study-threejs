@@ -61,24 +61,8 @@ if (WEBGL.isWebGLAvailable()) {
     scene.add(mesh);
   });
 
-  // const cube1 = new THREE.Mesh(geometry, material);
-  // cube1.position.set(-1, 0, 0);
-  // scene.add(cube1);
-
-  // const planeGeometry = new THREE.PlaneGeometry(30, 30, 1, 1);
-  // const planeMaterial = new THREE.MeshStandardMaterial({
-  //   color: 0xeeeeee,
-  // });
-  // const plane = new THREE.Mesh(planeGeometry, planeMaterial);
-  // plane.rotation.x = -0.5 * Math.PI;
-  // plane.position.y = -0.5;
-  // scene.add(plane);
-
   function render(time) {
     time *= 0.001;
-
-    // cube1.rotation.x = time;
-    // cube1.rotation.y = time;
 
     renderer.render(scene, camera);
     requestAnimationFrame(render);
